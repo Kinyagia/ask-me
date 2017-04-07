@@ -1,0 +1,10 @@
+{ "questions":[{
+  "user": "John",
+  "content":"What is life?"
+  },{
+    "user": "Jane",
+    "content":"What is earth?"
+
+  }]
+
+}
