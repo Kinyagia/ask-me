@@ -5,6 +5,15 @@
     "user": "Jane",
     "content":"What is earth?"
 
-  }]
+  }],
+  "responses":[{
+     "author":"Alex",
+     "answer":"Dirt"
+     },{
+      "author":"Jake",
+      "answer":"A book" 
+
+
+    }]
 
 }

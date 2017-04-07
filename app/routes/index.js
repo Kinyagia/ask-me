@@ -3,8 +3,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question');
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      responses: this.store.findAll('response')
+    });
   },
+
 
   actions: {
     saveQuestion3(params) {
@@ -13,7 +17,7 @@ export default Ember.Route.extend({
       this.transitionTo('index')
 
     },
-  
+
 
 
   }
