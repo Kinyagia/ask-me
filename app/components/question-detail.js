@@ -7,5 +7,8 @@ export default Ember.Component.extend({
         this.sendAction('destroyQuestion', question);
       }
     },
+    destroyResponse(response){
+      this.sendAction('destroyResponse', response);
+    }
   }
 });

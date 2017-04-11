@@ -1,4 +1,11 @@
 <li>{{question.user}} - {{question.content}}</li>
 
-  
+<h3>Responses</h3>
+
+<ul>
+  {{#each question.responses as |response|}}
+   {{response-tile response=response destroyResponse='destroyResponse'}}
+  {{/each}}
+</ul>
+
 <button {{action 'delete' question}}>Delete question</button>
